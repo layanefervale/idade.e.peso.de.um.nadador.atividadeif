@@ -1,4 +1,9 @@
 # idade.e.peso.de.um.nadador.atividadeif
+
+
+
+
+
 */
 #include <stdio.h>
 
