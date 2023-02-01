@@ -1,2 +1,37 @@
 # idade.e.peso.de.um.nadador.atividadeif
-#include <stdio.h> int main()  {     int i;     printf("entre com o a sua idade: ");     scanf("%d", &i);     if(i<5)     {         printf("voce nao tem categoria");     }else{         if(i>=5 && i<8)         {             printf("sua categoria e a infantil A");             }else{             if(i>=8 && i<11)                 {                 printf("sua categoria e a infantil B");                 }else{                 if(i>=11 && i<14)                     {                     printf("sua categoria e a juvenil A");                     }else{                     if(i>=14 && i<17)                         {                         printf("sua categoria e a juvenil B");                         }else{                         if(i>=18)                             {                             printf("sua categoria e a adulto");                             } 
+Var
+   idade : inteiro
+   categoria : caractere
+ 
+Inicio
+   escreval("Digite a idade: ")
+   leia(idade)
+   
+   se (idade<5) entao
+       categoria <- "nenhuma"
+       senao
+           se (idade<=7) entao
+           categoria <- "infantil"
+           senao
+               se (idade<=10) entao
+               categoria <- "juvenil"
+               senao
+                   se (idade<=15) entao
+                   categoria <- "adolescente"
+                   senao
+                       se (idade<=30) entao
+                       categoria <- "adulto"
+                       senao
+                         se (idade>30)  entao
+                         categoria <- "sênior"
+                         fimse
+                  fimse
+              fimse
+           fimse
+        fimse
+   fimse
+   
+   escreval("Idade: ", idade)
+   escreval("Categoria: ", categoria)
+ 
+Fimalgoritmo
