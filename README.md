@@ -1,10 +1,5 @@
 # idade.e.peso.de.um.nadador.atividadeif
 
-
-
-
-
-*/
 #include <stdio.h>
 
 void Categoria(int idade){
